@@ -12,12 +12,12 @@ route:
 receivers:
   - name: 'email-alerts'
     email_configs:
-      - to: 'contact@alidabo.site'
-        from: 'contact@alidabo.site'
-        smarthost: 'smtp.alidabo.site:587'
-        auth_username: 'contact@alidabo.site'
-        auth_identity: 'contact@alidabo.site'
-        auth_password: 'AlsonDab2313@'
+      - to: 'alsondab9@gmail.com'
+        from: 'ton.email@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'ton.email@gmail.com'
+        auth_identity: 'ton.email@gmail.com'
+        auth_password: 'VOTRE_MOT_DE_PASSE_APPLICATION_GMAIL'
         require_tls: true
 
   - name: 'web.hook'
