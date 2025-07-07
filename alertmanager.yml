@@ -12,11 +12,16 @@ route:
 receivers:
   - name: 'email-alerts'
     email_configs:
-      - to: 'votre_email@gmail.com'
-        from: 'votre_email@gmail.com'
+      # REMPLACEZ PAR VOS VRAIS IDENTIFIANTS GMAIL :
+      # 1. Allez sur https://myaccount.google.com/
+      # 2. Sécurité → Authentification à 2 facteurs → Activer
+      # 3. Mots de passe d'application → Générer pour "Mail"
+      # 4. Remplacez les valeurs ci-dessous :
+      - to: 'VOTRE_EMAIL@gmail.com'  # ← REMPLACEZ
+        from: 'VOTRE_EMAIL@gmail.com'  # ← REMPLACEZ
         smarthost: 'smtp.gmail.com:587'
-        auth_username: 'votre_email@gmail.com'
-        auth_password: 'votre_mot_de_passe_app'
+        auth_username: 'VOTRE_EMAIL@gmail.com'  # ← REMPLACEZ
+        auth_password: 'VOTRE_MOT_DE_PASSE_APP'  # ← REMPLACEZ (16 caractères)
         require_tls: true
 
   - name: 'web.hook'
